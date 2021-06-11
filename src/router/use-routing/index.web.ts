@@ -36,6 +36,7 @@ export default function useRouting<
   }, [])
 
   const getParam = <Param>(
+    // @ts-ignore
     param: Parameters<typeof get>['1'],
     fallback?: unknown
   ): Param | undefined => {

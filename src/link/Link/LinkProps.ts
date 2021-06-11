@@ -5,7 +5,8 @@ import { NavigateTo } from '../../router/use-routing/types'
 export type LinkProps<
   ExtraProps extends object = {},
   Web extends object = {},
-  Native extends object = Required<NavigateTo>['native'],
+  // @ts-ignore
+  Native extends object = Required<NavigateTo>['native'], 
   Params extends object = {}
 > = {
   /**
