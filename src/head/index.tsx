@@ -1,4 +1,4 @@
-import { useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 
 type Meta = {

@@ -1,6 +1,6 @@
 import { TouchableOpacity, TextStyle } from 'react-native'
 import { ComponentPropsWithoutRef } from 'react'
-import { NavigateTo } from '../../hooks'
+import { NavigateTo } from '../../router/use-routing/types'
 
 export type LinkProps<
   ExtraProps extends object = {},

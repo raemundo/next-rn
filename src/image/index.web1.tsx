@@ -1,3 +1,4 @@
+import React from "react";
 import NextImage from "next/image";
 import { View } from "react-native";
 
