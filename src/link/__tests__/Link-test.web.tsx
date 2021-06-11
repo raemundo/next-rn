@@ -4,9 +4,7 @@ import Link from "..";
 
 it(`renders a complex gradient`, () => {
   const component = mount(
-    <Link routeName="chat" params={{ roomId: "hey!" }}>
-      test link
-    </Link>
+    <Link routeName="chat" params={{ roomId: "hey!" }} />
   );
 
   expect(component.find("a").first().prop("href")).toBe("/chat?roomId=hey!");
