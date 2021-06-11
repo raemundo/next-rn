@@ -3,5 +3,20 @@
   "version": "0.0.1",
   "main": "index.js",
   "author": "raemundo <amaiplusplus@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.170",
+    "@types/react": "^17.0.11",
+    "expo-module-scripts": "^2.0.0",
+    "prettier": "^2.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native": "^0.64.2",
+    "react-native-web": "^0.16.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "next": "^10.2.3",
+    "react-navigation-hooks": "^1.1.0"
+  }
 }
