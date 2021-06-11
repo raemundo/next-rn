@@ -18,7 +18,8 @@
     "build"
   ],
   "jest": {
-    "preset": "jest-expo-enzyme"
+    "preset": "jest-expo-enzyme",
+    "setupTestFrameworkScriptFile": "./src/setupTests.ts"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.170",
