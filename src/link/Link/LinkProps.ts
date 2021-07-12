@@ -1,12 +1,12 @@
 import { TouchableOpacity, TextStyle } from 'react-native'
 import { ComponentPropsWithoutRef } from 'react'
-import { NavigateTo } from '../../router/use-routing/types'
+import { NavigateTo } from '../../router/use-routing/types' // wrong import
 
 export type LinkProps<
   ExtraProps extends object = {},
-  Web extends object = {},
-  // @ts-ignore
-  Native extends object = Required<NavigateTo>['native'], 
+  Web extends object = {}, 
+  //@ts-ignore
+  Native extends object = Required<NavigateTo>['native'],
   Params extends object = {}
 > = {
   /**

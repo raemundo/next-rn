@@ -1,1 +1,3 @@
-export { useFocusEffect as default } from 'expo-navigation-core'
+import Native from "./native";
+
+export default Native;

@@ -1,5 +1,7 @@
-import { useEffect } from 'react'
+import Native from "./native";
+import Next from "./next";
 
-export default function useFocusEffect(callback: (...args: any) => any) {
-  return useEffect(callback, [callback])
-}
+const isNext = false;
+const Web = isNext ? Next : Native;
+
+export default Web;

@@ -1,6 +1,6 @@
 {
   "name": "next-rn",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "sideEffects": true,
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -12,7 +12,8 @@
     "test": "expo-module test",
     "prepare": "expo-module prepare",
     "prepublishOnly": "expo-module prepublishOnly",
-    "expo-module": "expo-module"
+    "expo-module": "expo-module",
+    "build:ts": "tsc"
   },
   "files": [
     "build"
@@ -22,22 +23,24 @@
     "setupTestFrameworkScriptFile": "./src/setupTests.ts"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.170",
-    "@types/react": "^17.0.11",
+    "@babel/runtime-corejs2": "^7.14.6",
+    "@types/lodash": "^4.14.171",
+    "@types/react": "^17.0.14",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
     "expo-module-scripts": "^2.0.0",
-    "prettier": "^2.3.1",
+    "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-native": "^0.64.2",
-    "react-native-web": "^0.16.5"
+    "react-native-web": "^0.17.1",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
     "@react-navigation/native": "^5.9.4",
     "expo-navigation-core": "^0.3.12",
     "lodash": "^4.17.21",
     "lodash.get": "^4.4.2",
-    "next": "^10.2.3",
+    "next": "^11.0.1",
     "react-navigation-hooks": "^1.1.0"
   }
 }

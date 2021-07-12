@@ -1,8 +1,3 @@
-import React from "react";
-import { Image } from "react-native";
+import Native from "./native";
 
-export default (props) => {
-    return (
-        <Image {...props} source={{uri: "", width: "", height: ""}} />
-    )
-};
+export default Native;
