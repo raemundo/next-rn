@@ -1,6 +1,6 @@
 {
   "name": "next-rn",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "sideEffects": true,
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -16,7 +16,13 @@
     "build:ts": "tsc"
   },
   "files": [
-    "build"
+    "head",
+    "image",
+    "link",
+    "router",
+    "script",
+    "use-focus-effect",
+    "utils"
   ],
   "jest": {
     "preset": "jest-expo-enzyme",
