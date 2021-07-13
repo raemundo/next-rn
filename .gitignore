@@ -117,10 +117,10 @@ typings/
 /.pnp
 .pnp.js
 
-head/
-image/
-link/
-router/
-script/
-use-focus-effect/
-utils/
+/head/
+/image/
+/link/
+/router/
+/script/
+/use-focus-effect/
+/utils/
