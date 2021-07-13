@@ -16,5 +16,8 @@ module.exports = withPlugins(
   ],
   {
     webpack5: false,
+    images: {
+      domains: ['reactnative.dev'],
+    },
   }
 )

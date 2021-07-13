@@ -10,13 +10,13 @@ export default function Home() {
     <View style={styles.container}>
       <Head metaInfo={{ title: "my homepage" }} />
       <Script />
-      {/* <Image
+      <Image
         source={{
           uri: "https://reactnative.dev/img/tiny_logo.png",
           width: 50,
           height: 50,
         }}
-      /> */}
+      />
       <Text style={styles.text}>Home Screen 🥳</Text>
       <Link style={{ color: "green", fontSize: 20 }} routeName="profile">
         Click me to open profile :)
