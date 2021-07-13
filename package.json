@@ -1,6 +1,6 @@
 {
   "name": "next-rn",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "sideEffects": true,
   "main": "build/index.js",
   "types": "build/index.d.ts",
