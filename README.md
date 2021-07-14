@@ -115,17 +115,17 @@ Replace the following instances in your code after installation and setup:
 +  Go
 +</Link>
 ```
-### Head
+### `<Head>`
 ```diff
 -import Head from "next/head"
 +import Head from "next-rn/head";
 ```
-### Script
+### `<Script>`
 ```diff
 -import Script from "next/script"
 +import Script from "next-rn/script";
 ```
-### Image
+### `<Image>`
 ```diff
 -import Image from "next/image";
 +import Image from "next-rn/image";
