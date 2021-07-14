@@ -1,5 +1,6 @@
 
 
+
 # Next.js Router + React Navigation + More 🥳
 
 A set of hooks that wrap the `react-navigation` API that you're used to, and make it work with `next/router`.
@@ -280,6 +281,10 @@ export default function Button() {
 
 - `nextLinkProps`: extends `next/router`'s [Link props](https://nextjs.org/docs#with-link).
 - `isText`: if false, you can set the children to be non-Text nodes. Defaults to `true`. If `true`, the children can be a string **or** a `Text` node.
+
+## `Head`
+## `Script`
+## `Image`
 
 ## Web Thoughts
 
