@@ -1,6 +1,7 @@
 
 
 
+
 # Next.js Router + React Navigation + More 🥳
 
 A set of hooks that wrap the `react-navigation` API that you're used to, and make it work with `next/router`.
@@ -26,10 +27,11 @@ yarn add next-rn
   - [`useRouting`](#userouting)
   - [`useFocusEffect`](#useFocusEffect)
 - Components
-  - [`Link`](#link)
   - [`Head`](#head)
   - [`Script`](#script)
   - [`Image`](#image)
+  - [`Link`](#link)
+  - 
 ## Set up
 
 **Step 0. Install next with expo:**
@@ -242,7 +244,12 @@ export default ({ userId }) => {
   return <Profile userId={userId} />
 }
 ```
-
+## `Head`
+soon
+## `Script`
+soon
+## `Image`
+soon
 ## `Link`
 
 The following will use the `chat` route in react navigation.
@@ -281,10 +288,6 @@ export default function Button() {
 
 - `nextLinkProps`: extends `next/router`'s [Link props](https://nextjs.org/docs#with-link).
 - `isText`: if false, you can set the children to be non-Text nodes. Defaults to `true`. If `true`, the children can be a string **or** a `Text` node.
-
-## `Head`
-## `Script`
-## `Image`
 
 ## Web Thoughts
 
