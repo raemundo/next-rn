@@ -10,7 +10,7 @@ _This is a new library, PRs are very welcome!_
 
 ## Example
 
-👾 [Github Repo]([next-rn/examples/next-nav at main · raemundo/next-rn (github.com)](https://github.com/raemundo/next-rn/tree/main/examples/next-nav) | 💻 [Website]() | 📱 [Open expo app directly]() | ☎️ [Expo app website]()
+👾 [Github Repo](https://github.com/raemundo/next-rn/tree/main/examples/next-nav) | 💻 [Website]() | 📱 [Open expo app directly]() | ☎️ [Expo app website]()
 
 ## Install
 
