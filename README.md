@@ -274,7 +274,7 @@ export default function Button() {
 
 **Required props**:
 
-- `routeName`: string, see [`useRouting().navigate`](https://github.com/nandorojo/expo-next-react-navigation#navigate) docs.
+- `routeName`: string, see [`useRouting().navigate`](https://github.com/raemundo/next-rn#navigate) docs.
 - `children`: string
 
 **Optional props**
