@@ -22,7 +22,7 @@ import { NextProps, Web } from "./types";
  * -  Press me!
  * - </TouchableOpacity>
  *
- * +import { Link } from 'expo-next-react-navigation'
+ * +import Link from 'next-rn/link'
  * + ...
  * +<Link routeName="home">
  * +  Press me!
