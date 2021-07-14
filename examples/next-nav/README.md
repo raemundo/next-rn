@@ -1,4 +1,5 @@
-# `expo-next-react-navigation` example
+
+# `next-rn` example
 
 If you're just looking around, there are only two places you need to look to see how the set up works:
 
@@ -12,8 +13,8 @@ If you're just looking around, there are only two places you need to look to see
 **1. Clone repo**
 
 ```sh
-git clone https://github.com/nandorojo/expo-next-react-navigation
-cd expo-next-react-navigation/examples/next-nav
+git clone https://github.com/raemundo/next-rn.git
+cd next-rn/examples/next-nav
 yarn
 ```
 
@@ -35,8 +36,8 @@ yarn next dev
 
 Download the expo app to your phone and open this link on your phone:
 
-📱 [Open expo app directly](https://exp.host/@kellycup8/next-nav) | ☎️ [Expo app website](https://expo.io/@kellycup8/next-nav)
+📱 [Open expo app directly]() | ☎️ [Expo app website]()
 
 ## 💻 See Next.js hosted website
 
-Link: [https://next-nav.fernandorojo.now.sh](https://next-nav.fernandorojo.now.sh)
+Link: []()
