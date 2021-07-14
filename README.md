@@ -1,6 +1,5 @@
 
-
-
+  
 
 # Next.js Router + React Navigation + More 🥳
 
@@ -145,12 +144,10 @@ React hook that wraps `useNavigation` (from react-navigation) hook and `useRoute
 It follows the [same API](https://reactnavigation.org/docs/en/next/use-navigation.html) as `useNavigation`.
 
 ```es6
-import { useRouting } from 'expo-next-react-navigation`
+import useRouting from "next-rn/router/use-routing"
 
 export default function App() {
   const { navigate, push, getParam, goBack } = useRouting()
-
-
 }
 ```
 
@@ -230,7 +227,7 @@ See [react navigation docs](https://reactnavigation.org/docs/en/next/use-focus-e
 Make sure to use [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) as seen in the example.
 
 ```es6
-import { useFocusEffect } from 'expo-next-react-navigation'
+import useFocusEffect from 'next-rn/use-focus-effect'
 
 export default ({ userId }) => {
   useFocusEffect(
@@ -341,4 +338,3 @@ const navigateToChatRoom = () =>
 ```
 
 This would open the `pages/chat/[roomId].js` file, with `roomId` as a param.
-
