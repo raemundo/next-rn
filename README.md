@@ -30,7 +30,7 @@ yarn add next-rn
   - [`Script`](#script)
   - [`Image`](#image)
   - [`Link`](#link)
-  - 
+  
 ## Set up
 
 **Step 0. Install next with expo:**
