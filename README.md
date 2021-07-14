@@ -1,6 +1,6 @@
 
 
-# Next.js Router + React Navigation 🥳
+# Next.js Router + React Navigation + More 🥳
 
 A set of hooks that wrap the `react-navigation` API that you're used to, and make it work with `next/router`.
 
