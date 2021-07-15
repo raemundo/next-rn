@@ -1,4 +1,5 @@
 
+
   
 
 # Next.js Router + React Navigation + More 🥳
@@ -242,7 +243,18 @@ export default ({ userId }) => {
 }
 ```
 ## `Head`
-soon
+
+ - `metaInfo` : 
+	 - `title` : string, required
+	
+	 - `meta` : array of objects, optional
+		 - hid : unique identifier
+		 - name : string
+		 - content : string
+	 - `script` : array of objects
+		 - `type` : string
+		 - `innerHTML` : any
+
 ## `Script`
 soon
 ## `Image`
