@@ -1,12 +1,12 @@
 export type Meta = {
-    hid: any
+    hid: string
     name: string
     content: string
 }
-
+ 
 export type Script = {
     type: string
-    innerHTML: any
+    innerHTML: string
 }
 
 export type MetaInfo = {
