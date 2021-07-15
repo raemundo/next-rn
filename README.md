@@ -1,5 +1,6 @@
 
 
+
   
 
 # Next.js Router + React Navigation + More 🥳
@@ -256,9 +257,9 @@ export default ({ userId }) => {
 		 - `innerHTML` : any
 
 ## `Script`
-soon
+This component is the same as [nextjs Script.](https://nextjs.org/docs/basic-features/script) 
 ## `Image`
-soon
+This component works same as `Image` in [react-native](https://reactnative.dev/docs/image).
 ## `Link`
 
 The following will use the `chat` route in react navigation.
