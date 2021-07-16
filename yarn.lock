@@ -2191,7 +2191,7 @@
     query-string "^6.13.6"
     react-is "^16.13.0"
 
-"@react-navigation/native@^5.0.0-alpha.29", "@react-navigation/native@^5.9.4":
+"@react-navigation/native@^5.9.4":
   version "5.9.4"
   resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.9.4.tgz#414c044423c58aa1cdde1b6494309e0b51da08b8"
   integrity sha512-BUCrOXfZDdKWBqM8OhOKQhCX5we4HUo5XG6tCQtVqQAep+7UcApZmMUuemUXDxVe8NPESUpoUlB0RaEpyIdfTQ==
@@ -4685,14 +4685,6 @@ expo-module-scripts@^2.0.0:
     jest-expo-enzyme "^1.1.2"
     ts-jest "~26.3.0"
     typescript "^4.0.2"
-
-expo-navigation-core@^0.3.12:
-  version "0.3.12"
-  resolved "https://registry.yarnpkg.com/expo-navigation-core/-/expo-navigation-core-0.3.12.tgz#c8f6597b18cb8b9dbd0a615411f0b1ec80a41c74"
-  integrity sha512-Dt4fI8LELsBzxZVabL8jA0vRPdDIt0KWSntu/iSAlf1ywG5/Bem51QeQRBjNhM/6D/060JeNEVzGT6l1JZrCPA==
-  dependencies:
-    "@react-navigation/native" "^5.0.0-alpha.29"
-    lodash.get "^4.4.2"
 
 extend-shallow@^2.0.1:
   version "2.0.1"
