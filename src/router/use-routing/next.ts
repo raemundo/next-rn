@@ -6,7 +6,7 @@ import empty from '../../utils/empty'
 import {
   DefaultRouteProp,
   DefaultNavigationProp,
-} from 'expo-navigation-core/build/hooks/use-routing/types'
+} from './core-types'
 
 const goBack = () => Router.back()
 const popToTop = () => {}
