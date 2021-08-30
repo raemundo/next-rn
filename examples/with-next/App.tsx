@@ -6,8 +6,17 @@ import Profile from "./pages/profile";
 
 export default function App() {
   const Stack = createStackNavigator();
+  const navigationRef = React.createRef();
+
+  function navigate(name, params) {
+    navigationRef.current && navigationRef.current.navigate(name, params);
+  }
+
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      // @ts-ignore
+      ref={navigationRef}
+    >
       <Stack.Navigator>
         <Stack.Screen name="/" component={Home} />
         <Stack.Screen name="profile" component={Profile} />

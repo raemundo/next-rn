@@ -1,6 +1,6 @@
 {
   "name": "next-rn",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "sideEffects": true,
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -29,22 +29,22 @@
     "setupTestFrameworkScriptFile": "./src/setupTests.ts"
   },
   "devDependencies": {
-    "@babel/runtime-corejs2": "^7.14.6",
-    "@types/lodash": "^4.14.171",
-    "@types/react": "^17.0.14",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
+    "@babel/runtime-corejs2": "^7.15.3",
+    "@types/lodash": "^4.14.172",
+    "@types/react": "^17.0.19",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
     "expo-module-scripts": "^2.0.0",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-native": "^0.64.2",
+    "react-native": "^0.65.1",
     "react-native-web": "^0.17.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.2"
   },
   "dependencies": {
-    "@react-navigation/native": "^5.9.4",
+    "@react-navigation/native": "^6.0.2",
     "lodash.get": "^4.4.2",
-    "next": "^11.0.1",
+    "next": "^11.1.0",
     "react-navigation-hooks": "^1.1.0"
   }
 }
