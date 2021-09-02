@@ -1,21 +1,23 @@
-import { useNavigation } from 'react-navigation-hooks'
+import { useNavigation, useRoute } from '@react-navigation/native'
 import { useCallback } from 'react'
 import { NavigateTo } from './types'
 
 export default function useRouting() {
   const {
     navigate: nav,
-    getParam: grabParam,
+    // getParam: grabParam,
     push: pushTo,
     goBack,
   } = useNavigation()
 
+  const { params: grabParam } = useRoute();
+
   const navigate = useCallback(
     <To extends NavigateTo = NavigateTo>(route: To) => {
-      nav({
-        routeName: route.routeName,
-        params: route.params,
-      })
+      nav(
+        route.routeName,
+        route.params,
+      )
     },
     [nav]
   )
@@ -26,7 +28,7 @@ export default function useRouting() {
     [pushTo]
   )
   const getParam = <Param>(param: string, fallback?: unknown): Param => {
-    const value: Param = grabParam(param, fallback)
+    const value = grabParam[param] //grabParam(param, fallback)
     return value
   }
 
