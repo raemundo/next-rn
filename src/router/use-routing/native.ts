@@ -6,6 +6,7 @@ export default function useRouting() {
   const {
     navigate: nav,
     // getParam: grabParam,
+    // @ts-ignore
     push: pushTo,
     goBack,
   } = useNavigation()
@@ -15,6 +16,7 @@ export default function useRouting() {
   const navigate = useCallback(
     <To extends NavigateTo = NavigateTo>(route: To) => {
       nav(
+        // @ts-ignore
         route.routeName,
         route.params,
       )
@@ -28,6 +30,7 @@ export default function useRouting() {
     [pushTo]
   )
   const getParam = <Param>(param: string, fallback?: unknown): Param => {
+    // @ts-ignore
     const value = grabParam[param] //grabParam(param, fallback)
     return value
   }
