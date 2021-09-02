@@ -1,6 +1,6 @@
 {
   "name": "next-rn",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "sideEffects": true,
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -44,7 +44,6 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.2",
     "lodash.get": "^4.4.2",
-    "next": "^11.1.0",
-    "react-navigation-hooks": "^1.1.0"
+    "next": "^11.1.0"
   }
 }
