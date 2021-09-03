@@ -3,7 +3,7 @@ import { TouchableOpacity, Text } from "react-native";
 import NextLink from "next/link";
 import { LinkProps } from "./LinkProps";
 import { NextProps, Web } from "./types";
-import useRouting from "../../router/use-routing/next";
+import useRouting from "../../router/use-routing";
 import empty from "../../utils/empty";
 import { useCallback } from "react";
 
