@@ -11,7 +11,7 @@ export default function Profile() {
     const id = getParam('id');
     return (
         <View style={styles.container}>
-            <Head metaInfo={{ title: "my profile" }} />
+            <Head metaInfo={{ title: `my profile - ${id}` }} />
             <Text style={styles.text}>Wellcome, {id}! 🏋️‍♀️</Text>
             <Button text="👈 Go back" onPress={() => goBack()} />
         </View>
