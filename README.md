@@ -121,6 +121,66 @@ Replace the following instances in your code after installation and setup:
 ```diff
 -import Head from "next/head"
 +import Head from "next-rn/head";
+-<Head>
+- <title>page title</title>
+-  <meta name="description", content="page description" />
+-  <meta name="og:title", content="page title" />
+-  <meta name="og:description", content="page description" />
+-  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: 
+-    `{
+-      "@context": "https://schema.org",
+-      "@type": "BreadcrumbList",
+-      "itemListElement": [
+-        {
+-            "@type": "ListItem",
+-            "position": 1 ,
+-            "name": "Homepage",
+-            "item": "https://yourdomain.com/index"
+-        },
+-        {
+-            "@type": "ListItem",
+-            "position":  2,
+-            "name": "Cart",
+-            "item": "https://yourdomain.com/cart"
+-        }
+-      ]
+-    }`
+-  }} />
+-</Head>
++ <Head metaInfo={{ 
++  title: `page title`,
++  meta: [
++    { hid: "description", name: "description", content: "page +description" },
++    { hid: "og:title", name: "og:title", content: "page title" },
++    { hid: "og:description", name: "og:description", content: +"page description"}`
++  ],
++  script: [
++    {
++      innerHTML: `
++            {
++              "@context": "https://schema.org",
++              "@type": "BreadcrumbList",
++              "itemListElement": [
++                 {
++                     "@type": "ListItem",
++                     "position": 1 ,
++                     "name": "Homepage",
++                     "item": "https://yourdomain.com/index"
++                 },
++                 {
++                     "@type": "ListItem",
++                     "position":  2,
++                     "name": "Cart",
++                     "item": "https://yourdomain.com/cart"
++                 }
++              ]
++            }
++          `,
++      type: "application/ld+json",
++    }
++  ]
++  />
+`
 ```
 ### `<Script>`
 ```diff
@@ -247,7 +307,6 @@ export default ({ userId }) => {
 
  - `metaInfo` : 
 	 - `title` : string, required
-	
 	 - `meta` : array of objects, optional
 		 - hid : unique identifier
 		 - name : string
