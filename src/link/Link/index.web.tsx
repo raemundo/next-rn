@@ -1,7 +1,5 @@
 import Native from "./native";
 import Next from "./next";
+import Web from "../../utils/web"
 
-const isNext = process.env.NEXT_PUBLIC_IS_NEXT;
-const Web = isNext ? Next : Native;
-
-export default Web;
+export default Web(Native, Next);
