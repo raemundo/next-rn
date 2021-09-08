@@ -93,14 +93,14 @@ Replace the following instances in your code after installation and setup:
 ### `useNavigation` 👉 `useRouting`
 
 ```diff
--import { useNavigation } from 'react-navigation-hooks'
+-import { useNavigation } from '@react-navigation/native'
 +import useRouting from 'next-rn/router/use-routing'
 ```
 
 ### `useLayoutEffect`
 
 ```diff
--import { useLayoutEffect } from 'react-navigation-hooks'
+-import { useLayoutEffect } from '@react-navigation/native'
 + import { useLayoutEffect } from 'next-rn/use-layout-effect'
 ```
 
