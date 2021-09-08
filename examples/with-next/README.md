@@ -14,7 +14,7 @@ If you're just looking around, there are only two places you need to look to see
 
 ```sh
 git clone https://github.com/raemundo/next-rn.git
-cd next-rn/examples/next-nav
+cd next-rn/examples/with-next
 yarn
 ```
 
