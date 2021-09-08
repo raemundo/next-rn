@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "next-navigation",
-    "slug": "next-nav",
+    "slug": "with-next",
     "platforms": ["ios", "android", "web"],
     "icon": "./assets/icon.png",
     "splash": {
