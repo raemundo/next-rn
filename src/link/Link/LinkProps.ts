@@ -1,4 +1,4 @@
-import { TouchableOpacity, TextStyle } from 'react-native'
+import { Pressable, TextStyle } from 'react-native'
 import { ComponentPropsWithoutRef } from 'react'
 import { NavigateTo } from '../../router/use-routing/types' // wrong import
 
@@ -14,9 +14,9 @@ export type LinkProps<
    */
   children: React.ReactNode
   /**
-   * Optional: props passed to TouchableOpacity component on native.
+   * Optional: props passed to Pressable component on native.
    */
-  touchableOpacityProps?: ComponentPropsWithoutRef<typeof TouchableOpacity>
+  PressableProps?: ComponentPropsWithoutRef<typeof Pressable>
   /**
    * Link text style
    */

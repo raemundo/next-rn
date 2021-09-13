@@ -16,11 +16,11 @@ import { NextProps, Web } from "./types";
  * ## Usage
  *
  * ```diff
- * -import { TouchableOpacity } from 'react-native'
+ * -import { Pressable } from 'react-native'
  * -...
- * -<TouchableOpacity onPress={() => navigate({ routeName: 'home' })}>
+ * -<Pressable onPress={() => navigate({ routeName: 'home' })}>
  * -  Press me!
- * - </TouchableOpacity>
+ * - </Pressable>
  *
  * +import Link from 'next-rn/link'
  * + ...

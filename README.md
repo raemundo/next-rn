@@ -104,15 +104,15 @@ Replace the following instances in your code after installation and setup:
 + import { useLayoutEffect } from 'next-rn/use-layout-effect'
 ```
 
-### `<TouchableOpacity />` 👉 `<Link />`
+### `<Pressable />` 👉 `<Link />`
 
 ```diff
--import { TouchableOpacity } from 'react-native'
+-import { Pressable } from 'react-native'
 +import Link from "next-rn/link";
 
--<TouchableOpacity onPress={() => navigate({ routeName: 'chat' })}>
+-<Pressable onPress={() => navigate({ routeName: 'chat' })}>
 -  <Text>Go</Text>
-- </TouchableOpacity>
+- </Pressable>
 +<Link routeName="chat" params={{ roomId: 'hey!' }}>
 +  Go
 +</Link>
@@ -121,6 +121,7 @@ Replace the following instances in your code after installation and setup:
 ```diff
 -import Head from "next/head"
 +import Head from "next-rn/head";
+
 -<Head>
 - <title>page title</title>
 -  <meta name="description", content="page description" />
@@ -325,7 +326,7 @@ The following will use the `chat` route in react navigation.
 
 However, it will use the `pages/room.js` file for nextjs. Also, it will show up as `domain.com/messages` in the address bar.
 
-Optionally accepts a `nextLinkProps` prop dictionary and `touchableOpacityProps` dictionary as well.
+Optionally accepts a `nextLinkProps` prop dictionary and `PressableProps` dictionary as well.
 
 ```es6
 export default function Button() {
@@ -353,7 +354,7 @@ export default function Button() {
 
 - `web`: dictionary, see [`useRouting().navigate`](#navigate) docs. On `v1.0.5`+, you can also pass the `prefetch`, `replace`, and `scroll` booleans here, from the `next/link` [component](https://nextjs.org/docs/api-reference/next/link).
 
-- `touchableOpacityProps`: extends React Native's `TouchableOpacity` props.
+- `PressableProps`: extends React Native's `Pressable` props.
 
 - `nextLinkProps`: extends `next/router`'s [Link props](https://nextjs.org/docs#with-link).
 - `isText`: if false, you can set the children to be non-Text nodes. Defaults to `true`. If `true`, the children can be a string **or** a `Text` node.

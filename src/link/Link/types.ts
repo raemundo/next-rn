@@ -1,7 +1,7 @@
 // import { NavigateTo } from '../../hooks/use-routing/types'
 // import { ComponentPropsWithoutRef, CSSProperties } from 'react'
 import Link from 'next/link'
-// import { TouchableOpacity, TextStyle, ViewStyle } from 'react-native'
+// import { Pressable, TextStyle, ViewStyle } from 'react-native'
 
 // export type LinkProps<To extends NavigateTo = NavigateTo> = To & {
 //   /**
@@ -13,9 +13,9 @@ import Link from 'next/link'
 //    */
 //   nextLinkProps?: ComponentPropsWithoutRef<typeof Link>
 //   /**
-//    * Optional: props passed to TouchableOpacity component on native.
+//    * Optional: props passed to Pressable component on native.
 //    */
-//   touchableOpacityProps?: ComponentPropsWithoutRef<typeof TouchableOpacity>
+//   PressableProps?: ComponentPropsWithoutRef<typeof Pressable>
 //   style?: TextStyle | ViewStyle
 // }
 

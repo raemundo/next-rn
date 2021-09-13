@@ -1,5 +1,5 @@
 import * as React from "react";
-import { TouchableOpacity, Text } from "react-native";
+import { Pressable, Text } from "react-native";
 import NextLink from "next/link";
 import { LinkProps } from "./LinkProps";
 import { NextProps, Web } from "./types";
@@ -41,7 +41,7 @@ const LinkMaker = <
     (props: LinkProps<ExtraProps, Web, Params>, ref?: React.Ref<Text>) => {
       const { navigate } = useRouting();
       const {
-        touchableOpacityProps = empty.object,
+        PressableProps = empty.object,
         routeName,
         params,
         children,
@@ -57,11 +57,11 @@ const LinkMaker = <
       );
 
       return (
-        <TouchableOpacity {...touchableOpacityProps} onPress={nav}>
+        <Pressable {...PressableProps} onPress={nav}>
           <Text style={props.style} accessibiltyRole="link">
             {children}
           </Text>
-        </TouchableOpacity>
+        </Pressable>
       );
     }
   );
