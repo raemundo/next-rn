@@ -2,8 +2,7 @@ import React, { useMemo, ClassAttributes } from "react";
 import { Text, View, ViewStyle, TextStyle } from "react-native";
 import NextLink from "next/link";
 import empty from "../../utils/empty";
-import { LinkProps } from "./LinkProps";
-import { NextProps, Web } from "./types";
+import { NextProps, Web, LinkProps } from "./types";
 
 /**
  * Link component for react-navigation and nextjs.
