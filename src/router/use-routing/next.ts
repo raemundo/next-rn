@@ -1,16 +1,12 @@
 import { useCallback, useEffect, useRef } from 'react'
 import get from 'lodash.get'
 import Router, { useRouter } from 'next/router'
-import { NavigateTo } from './types'
+import { NavigateTo, DefaultRouteProp, DefaultNavigationProp } from './types'
 import empty from '../../utils/empty'
-import {
-  DefaultRouteProp,
-  DefaultNavigationProp,
-} from './core-types'
 
 const goBack = () => Router.back()
-const popToTop = () => {}
-const setParams = <R = {}>(a: R) => {}
+const popToTop = () => { }
+const setParams = <R = {}>(a: R) => { }
 
 export default function useRouting<
   RProp extends DefaultRouteProp = DefaultRouteProp,

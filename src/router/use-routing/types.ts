@@ -1,3 +1,11 @@
+import {
+  useNavigation,
+  useRoute,
+  RouteProp,
+  ParamListBase,
+  NavigationProp,
+} from '@react-navigation/native'
+
 export type Route<
   /**
    * Route string path
@@ -86,3 +94,6 @@ export type ReturnNav = {
   push: PushFunction<GenericRoute>
   getParam: GetParam
 }
+
+export type DefaultRouteProp = RouteProp<ParamListBase, string>
+export type DefaultNavigationProp = NavigationProp<ParamListBase>
