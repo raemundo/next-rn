@@ -1,20 +1,26 @@
-import Link from 'next/link'
+import Link from 'next-rn/link'
 import { useRouter } from 'next/router'
 import { View, Text } from "react-native";
+import useRouting from "next-rn/router/use-routing";
+
 export default function LocaleSwitcher() {
-  const router = useRouter()
+  const router_ = useRouter()
+  const router = useRouting();
+
   const { locales, locale: activeLocale } = router
   const otherLocales = locales.filter((locale) => locale !== activeLocale)
-
   return (
     <View>
       <Text>Locale switcher:</Text>
       <ul>
         {otherLocales.map((locale) => {
-          const { pathname, query, asPath } = router
+          const { asPath } = router_
+          const { pathname, getParam } = router
+          const id = getParam('id');
+          console.log({ pathname, id, asPath })
           return (
             <li key={locale}>
-              <Link href={{ pathname, query }} as={asPath} locale={locale}>
+              <Link routeName="profile" params={{ id: "ahmed" }} web={{ path: "profile/[id]" }} locale={locale}>
                 <a>{locale}</a>
               </Link>
             </li>
