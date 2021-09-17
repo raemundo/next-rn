@@ -3,6 +3,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Head from "next-rn/head";
 import useRouting from "next-rn/router/use-routing";
+import LocaleSwitcher from '../../components/LocaleSwitcher';
 // See the pages/ folder for the next.js routes
 // everything else is confined in this file :)
 
@@ -12,6 +13,7 @@ export default function Profile() {
     return (
         <View style={styles.container}>
             <Head metaInfo={{ title: `my profile - ${id}` }} />
+            <LocaleSwitcher />
             <Text style={styles.text}>Wellcome, {id}! 🏋️‍♀️</Text>
             <Button text="👈 Go back" onPress={() => goBack()} />
         </View>

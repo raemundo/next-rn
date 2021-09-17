@@ -16,6 +16,10 @@ module.exports = withPlugins(
   ],
   {
     webpack5: false,
+    i18n: {
+      locales: ['en', 'fr', 'nl'],
+      defaultLocale: 'en',
+    },
     images: {
       domains: ['reactnative.dev'],
     },

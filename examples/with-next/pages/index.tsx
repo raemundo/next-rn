@@ -4,12 +4,14 @@ import Link from "next-rn/link";
 import Head from "next-rn/head";
 import Image from "next-rn/image";
 import Script from "next-rn/script";
+import LocaleSwitcher from '../components/LocaleSwitcher'
 
 export default function Home() {
   return (
     <View style={styles.container}>
       <Head metaInfo={{ title: "my homepage" }} />
       <Script />
+      <LocaleSwitcher />
       <Image
         source={{
           uri: "https://reactnative.dev/img/tiny_logo.png",
