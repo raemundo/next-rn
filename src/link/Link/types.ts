@@ -89,5 +89,6 @@ export type LinkProps<
    * Default: `true`
    */
   isText?: boolean
-  native?: Native
+  native?: Native,
+  locale?: string | false;
 } & ExtraProps

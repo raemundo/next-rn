@@ -8,7 +8,7 @@ export default function LocaleSwitcher() {
 
   return (
     <View>
-      <Text accessibilityRole="paragraph">Locale switcher:</Text>
+      <Text>Locale switcher:</Text>
       <ul>
         {otherLocales.map((locale) => {
           const { pathname, query, asPath } = router

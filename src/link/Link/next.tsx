@@ -38,6 +38,7 @@ const Link = React.forwardRef<Text | View, LinkProps<NextProps, Web>>(
       children,
       isText = true,
       web,
+      locale,
     } = props;
     const query = useMemo(() => ({ ...params }), [params]);
     const webPath = web?.path?.[0] === "/" ? web?.path?.slice(1) : web?.path;
@@ -60,6 +61,7 @@ const Link = React.forwardRef<Text | View, LinkProps<NextProps, Web>>(
         scroll={web?.scroll}
         replace={web?.replace}
         shallow={web?.shallow}
+        locale={locale}
       >
         {isText ? (
           <Text ref={ref} accessibilityRole="link" style={style as TextStyle}>

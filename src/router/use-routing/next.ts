@@ -100,5 +100,9 @@ export default function useRouting<
     setParams,
     canGoBack,
     pathname: router?.pathname,
+    locale: router?.locale,
+    locales: router?.locales,
+    defaultLocale: router?.defaultLocale,
+    domainLocales: router?.domainLocales,
   }
 }
