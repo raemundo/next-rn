@@ -44,6 +44,7 @@ const LinkMaker = <
         routeName,
         params,
         children,
+        isText = true,
       } = props;
 
       const nav = useCallback(
@@ -57,9 +58,15 @@ const LinkMaker = <
 
       return (
         <Pressable {...PressableProps} onPress={nav}>
-          <Text style={props.style} accessibiltyRole="link">
-            {children}
-          </Text>
+          {isText ? (
+            <Text accessibilityRole="link" style={style}>
+              {children}
+            </Text>
+          ) : (
+            <View accessibilityRole="link" style={style}>
+              {children}
+            </View>
+          )}
         </Pressable>
       );
     }
