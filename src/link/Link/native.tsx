@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Pressable, Text } from "react-native";
+import { Pressable, Text, View } from "react-native";
 import NextLink from "next/link";
 import { NextProps, Web, LinkProps } from "./types";
 import useRouting from "../../router/use-routing";
@@ -59,11 +59,11 @@ const LinkMaker = <
       return (
         <Pressable {...PressableProps} onPress={nav}>
           {isText ? (
-            <Text accessibilityRole="link" style={style}>
+            <Text accessibilityRole="link" style={props.style}>
               {children}
             </Text>
           ) : (
-            <View accessibilityRole="link" style={style}>
+            <View accessibilityRole="link" style={props.style}>
               {children}
             </View>
           )}
