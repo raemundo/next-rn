@@ -15,6 +15,13 @@ module.exports = withPlugins(
     [withExpo, { projectRoot: __dirname }],
   ],
   {
+    typescript: {
+      // !! WARN !!
+      // Dangerously allow production builds to successfully complete even if
+      // your project has type errors.
+      // !! WARN !!
+      ignoreBuildErrors: true,
+    },
     webpack5: false,
     i18n: {
       locales: ['en', 'fr', 'nl'],
