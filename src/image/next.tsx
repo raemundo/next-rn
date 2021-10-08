@@ -9,3 +9,5 @@ function Image({ style, source: { uri, width, height }, accessibilityLabel }) {
     </View>
   );
 }
+
+export default Image;
