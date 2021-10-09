@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "./pages/index";
 import Profile from "./pages/profile/[id]";
-
+import "./lib/i18n";
 export default function App() {
   const Stack = createStackNavigator();
   const navigationRef = React.createRef();
