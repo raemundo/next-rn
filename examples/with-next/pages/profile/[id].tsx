@@ -5,10 +5,8 @@ import Head from "next-rn/head";
 import useRouting from "next-rn/router/use-routing";
 import LocaleSwitcher from '../../components/LocaleSwitcher';
 import { serverSideTranslations } from "../../lib/serverSideTranslations";
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { useTranslation } from "react-i18next";
-// import { useTranslation } from 'next-i18next';
 
 // See the pages/ folder for the next.js routes
 // everything else is confined in this file :)

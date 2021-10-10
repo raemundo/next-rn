@@ -18,8 +18,8 @@ export default function App() {
       ref={navigationRef}
     >
       <Stack.Navigator>
-        <Stack.Screen name="profile" component={Profile} />
         <Stack.Screen name="/" component={Home} />
+        <Stack.Screen name="profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );
