@@ -12,7 +12,7 @@ i18n
     // fallbackLng: "en",
 
     defaultNS: "common",
-    lng: "ar-EG",
+    lng: "en",
     interpolation: {
       // react already safes from xss
       escapeValue: false,

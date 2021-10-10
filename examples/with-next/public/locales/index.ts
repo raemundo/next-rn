@@ -4,11 +4,11 @@ import commonde from "./de/common.json";
 const trans = {
     "en": {
         // Namspaces
-        commonen,
+        common: commonen,
     },
     "de": {
         // Namspaces
-        commonde,
+        common: commonde,
     },
 }
 export default trans;
