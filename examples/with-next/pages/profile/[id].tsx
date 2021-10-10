@@ -4,17 +4,24 @@ import { View, Text, StyleSheet } from "react-native";
 import Head from "next-rn/head";
 import useRouting from "next-rn/router/use-routing";
 import LocaleSwitcher from '../../components/LocaleSwitcher';
+import { serverSideTranslations } from "../../lib/serverSideTranslations";
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import { useTranslation } from "react-i18next";
+// import { useTranslation } from 'next-i18next';
+
 // See the pages/ folder for the next.js routes
 // everything else is confined in this file :)
 
 export default function Profile() {
+    const { t } = useTranslation('common');
     const { goBack, getParam } = useRouting();
-    const id = getParam('id');
+    const id = "" // getParam('id');
     return (
         <View style={styles.container}>
             <Head metaInfo={{ title: `my profile - ${id}` }} />
             <LocaleSwitcher />
-            <Text style={styles.text}>Wellcome, {id}! 🏋️‍♀️</Text>
+            <Text style={styles.text}>{t(`h1`)}, {id}! 🏋️‍♀️</Text>
             <Button text="👈 Go back" onPress={() => goBack()} />
         </View>
     );
@@ -48,3 +55,13 @@ function Button({ text, onPress }: { text: string; onPress?: () => void }) {
         </Text>
     );
 }
+
+export async function getServerSideProps({ locale, params }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common"
+            ])),
+        },
+    };
+};

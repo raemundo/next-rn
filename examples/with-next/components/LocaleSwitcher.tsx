@@ -4,15 +4,15 @@ import { View, Text } from "react-native";
 import useRouting from "next-rn/router/use-routing";
 
 export default function LocaleSwitcher() {
-  const router_ = useRouter()
-  const router = useRouting();
+  // const router_ = useRouter()
+  // const router = useRouting();
 
-  const { locales, locale: activeLocale } = router
-  const otherLocales = locales.filter((locale) => locale !== activeLocale)
+  // const { locales, locale: activeLocale } = router
+  // const otherLocales = locales.filter((locale) => locale !== activeLocale)
   return (
     <View>
       <Text>Locale switcher:</Text>
-      <ul>
+      {/* <ul>
         {otherLocales.map((locale) => {
           const { asPath } = router_
           const { pathname, getParam } = router
@@ -26,7 +26,7 @@ export default function LocaleSwitcher() {
             </li>
           )
         })}
-      </ul>
+      </ul> */}
     </View>
   )
 }

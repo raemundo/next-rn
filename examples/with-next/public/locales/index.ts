@@ -1,8 +1,14 @@
-import common from "./ar-EG/common.json";
+import commonen from "./en/common.json";
+import commonde from "./de/common.json";
 
 const trans = {
-    "ar-EG": {
-        common,
+    "en": {
+        // Namspaces
+        commonen,
+    },
+    "de": {
+        // Namspaces
+        commonde,
     },
 }
 export default trans;

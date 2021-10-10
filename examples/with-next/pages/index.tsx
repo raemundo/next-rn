@@ -19,7 +19,7 @@ export default function Home() {
           height: 50,
         }}
       />
-      <Text style={styles.text}>Home Screen 🥳</Text>
+      <Text style={styles.text}>Home Screen</Text>
       <Link style={{ color: "green", fontSize: 20 }} routeName="profile" params={{id: "ahmed"}} web={{path: "profile/[id]"}}>
         Click me to open profile :)
       </Link>
