@@ -10,31 +10,31 @@
     "build": "next build"
   },
   "dependencies": {
-    "@expo/next-adapter": "^3.1.2",
-    "@react-navigation/native": "^6.0.5",
-    "@react-navigation/stack": "^6.0.10",
-    "expo": "~42.0.4",
-    "expo-localization": "^10.2.0",
-    "next": "^11.1.2",
+    "@expo/next-adapter": "^3.1.10",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
+    "expo": "~43.0.3",
+    "expo-localization": "^11.0.0",
+    "next": "^12.0.4",
     "next-compose-plugins": "^2.2.1",
     "next-fonts": "^1.5.1",
-    "next-i18next": "^8.8.0",
-    "next-images": "^1.8.1",
-    "next-rn": "0.0.19",
-    "next-transpile-modules": "^8.0.0",
+    "next-i18next": "^9.2.0",
+    "next-images": "^1.8.4",
+    "next-rn": "0.0.20",
+    "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-i18next": "^11.12.0",
+    "react-i18next": "^11.14.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-gesture-handler": "~1.10.2",
-    "react-native-screens": "~3.8.0",
+    "react-native-gesture-handler": "~2.0.0",
+    "react-native-screens": "~3.10.0",
     "react-native-web": "~0.17.5"
   },
   "devDependencies": {
-    "@types/react": "~17.0.27",
-    "@types/react-native": "~0.65.5",
-    "babel-preset-expo": "8.4.1",
-    "typescript": "~4.4.3"
+    "@types/react": "~17.0.37",
+    "@types/react-native": "~0.66.6",
+    "babel-preset-expo": "8.5.1",
+    "typescript": "~4.5.2"
   },
   "private": true
 }
