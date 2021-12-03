@@ -29,21 +29,21 @@
     "setupTestFrameworkScriptFile": "./src/setupTests.ts"
   },
   "devDependencies": {
-    "@babel/runtime-corejs2": "^7.15.3",
-    "@types/lodash": "^4.14.172",
-    "@types/react": "^17.0.19",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "@babel/runtime-corejs2": "^7.16.3",
+    "@types/lodash": "^4.14.177",
+    "@types/react": "^17.0.37",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "expo-module-scripts": "^2.0.0",
-    "prettier": "^2.3.2",
+    "prettier": "^2.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-native": "^0.65.1",
-    "react-native-web": "^0.17.1",
-    "typescript": "^4.4.2"
+    "react-native": "^0.66.3",
+    "react-native-web": "^0.17.5",
+    "typescript": "^4.5.2"
   },
-  "dependencies": {
-    "@react-navigation/native": "^6.0.2",
+  "peerDependencies": {
+    "@react-navigation/native": "^6.0.6",
     "lodash.get": "^4.4.2",
-    "next": "^11.1.0"
+    "next": "^12.0.4"
   }
 }
